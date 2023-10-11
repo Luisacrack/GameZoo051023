@@ -15,6 +15,7 @@ public class SceneChange : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Menu");
+        print("Abriendo Menu");
     }
     public void GoToAnyScene(string nameScene)
     {
