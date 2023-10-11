@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public PhotonView photonView;
     public GameObject camara;
     public TextMeshPro textNickName;
+    public Rigidbody rb;
     private void Start()
     {
         if(photonView.IsMine)// activa todo lo de mi personaje
@@ -36,6 +37,10 @@ public class PlayerController : MonoBehaviour
             float H = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
             float V = Input.GetAxis("Vertical") * Time.deltaTime * speed;
             transform.Translate(H,0,V);
+        }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * 200);
         }
     }
 }

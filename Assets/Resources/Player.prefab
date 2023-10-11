@@ -181,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3676449585792716881}
+  - component: {fileID: -1574579435649964477}
   - component: {fileID: 8973353053321412337}
   - component: {fileID: 4216569854126657768}
   - component: {fileID: 7429288899453684928}
@@ -211,6 +212,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1574579435649964477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930603808980657061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6f341b5486e5d40849495907f37101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nuevoLugar: {fileID: 3676449585792716881}
 --- !u!33 &8973353053321412337
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -291,6 +305,7 @@ MonoBehaviour:
   photonView: {fileID: 7657750130032811055}
   camara: {fileID: 0}
   textNickName: {fileID: 7133939362160678199}
+  rb: {fileID: 6368757887690964355}
 --- !u!114 &7657750130032811055
 MonoBehaviour:
   m_ObjectHideFlags: 0
